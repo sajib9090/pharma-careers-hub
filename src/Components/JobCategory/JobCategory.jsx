@@ -5,7 +5,7 @@ const JobCategory = () => {
     return (
         <div className='max-w-7xl mx-auto px-4 md:px-8 mt-32'>
             <div className='text-center'>
-                <h3 className='text-[#1A1919] text-4xl mb-4'>Job Category List</h3>
+                <h3 className='text-[#1A1919] text-4xl mb-4 font-extrabold'>Job Category List</h3>
                 <p className='text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-8'>
