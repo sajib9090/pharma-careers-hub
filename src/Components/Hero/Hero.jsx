@@ -12,7 +12,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className='w-full'>
-            <img className='object-cover w-[100%] h-screen md:h-[600px]' src="../../../public/assets/P3OLGJ1 copy 1.png" alt="" />    
+            <img className='object-cover w-[100%] h-screen md:h-[600px]' src="https://live.staticflickr.com/65535/52805253169_12561492e3_m.jpg" alt="" />    
             </div>    
         </div>
     );
