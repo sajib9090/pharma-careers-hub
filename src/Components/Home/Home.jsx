@@ -1,10 +1,12 @@
 import React from 'react';
-import Hero from '../Components/Hero/Hero';
+import Hero from '../Hero/Hero';
+import JobCategory from '../JobCategory/JobCategory';
 
 const Home = () => {
     return (
         <>
             <Hero/>
+            <JobCategory/>
         </>
     );
 };
