@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { data } from 'autoprefixer';
 
-const SingleJobCard = ({job}) => {
-    const {img, title, id, brand, job_category, job_type, location, salary
-    } = job;
+
+const SingleJobCard = ({ job }) => {
+    const {img, title, id, brand, job_category, job_type, location, salary} = job;
+
     return (
         <div className='border border-[#E8E8E8] rounded-lg mt-8 h-[360px] flex flex-col justify-center pl-10'>
             <div>

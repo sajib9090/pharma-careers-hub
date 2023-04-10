@@ -10,13 +10,13 @@ const JobCategory = () => {
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-8'>
 
-                <JobCard img="../../../public/assets/Icons/accounts 1.png" title="Account & Finance" vacancy="300 Jobs Available"/>
+                <JobCard img="../../assets/Icons/accounts 1.png" title="Account & Finance" vacancy="300 Jobs Available"/>
 
-                <JobCard img="../../../public/assets/Icons/business 1.png" title="Creative Design" vacancy="100+ Jobs Available"/>
+                <JobCard img="../../assets/Icons/business 1.png" title="Creative Design" vacancy="100+ Jobs Available"/>
 
-                <JobCard img="../../../public/assets/Icons/social-media 1.png" title="Marketing & Sales" vacancy="150 Jobs Available"/>
+                <JobCard img="../../assets/Icons/social-media 1.png" title="Marketing & Sales" vacancy="150 Jobs Available"/>
 
-                <JobCard img="../../../public/assets/Icons/chip 1.png" title="Engineering Job" vacancy="224 Jobs Available"/>
+                <JobCard img="../../assets/Icons/chip 1.png" title="Engineering Job" vacancy="224 Jobs Available"/>
             </div>
         </div>
     );

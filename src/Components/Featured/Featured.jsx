@@ -10,6 +10,7 @@ const Featured = () => {
   const handleSeeAllBtn = () => {
     setSeeAll(true);
   }
+
   return (
     <div className="mt-32 max-w-7xl mx-auto px-4 md:px-8">
       <div className="text-center">

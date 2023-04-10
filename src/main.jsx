@@ -11,7 +11,6 @@ import Home from './Components/Home/Home';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
-
 const router = createBrowserRouter([
   {
     path: "/",
