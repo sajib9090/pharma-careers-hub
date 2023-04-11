@@ -8,6 +8,7 @@ const Footer = () => {
         <div className=' h-[45vh] col-span-9 md:col-span-4 flex flex-col justify-center'>
              <h3 className="text-3xl font-extrabold mb-5">pharmaCareersHub</h3>
              <p>Discover your dream career. Browse thousands of job opportunities on our comprehensive job website. Get hired today!</p>
+             <img className="w-[150px] mt-4" src="https://i.ibb.co/tsYRq3t/Group-9969.png" alt="" />
             
         </div>
         <div className=' h-[45vh] col-span-4 md:col-span-2 flex flex-col justify-center space-y-4'>

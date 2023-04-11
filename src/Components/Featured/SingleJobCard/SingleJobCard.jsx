@@ -1,11 +1,34 @@
-import React, { useEffect, useState } from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
-import { data } from 'autoprefixer';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
+
+
+
 
 
 const SingleJobCard = ({ job }) => {
     const {img, title, id, brand, job_category, job_type, location, salary} = job;
+    
+    // const [jobId, setJobId] = useState([])
 
+    // const [foundId, setFoundId] = useState({})
+
+    // useEffect(()=>{
+    //     fetch(`/Data.json`)
+    //       .then(res => res.json())
+    //       .then(data => setJobId(data))
+    // },[])
+
+    // const handleViewDetails = id => {
+    //     const found = jobId.find(j => j.id === id)
+    //     setFoundId(found)
+    // }
+    
+    // console.log(foundId);
+
+    
+    
     return (
         <div className='border border-[#E8E8E8] rounded-lg mt-8 h-[360px] flex flex-col justify-center pl-10'>
             <div>
@@ -24,7 +47,7 @@ const SingleJobCard = ({ job }) => {
                 <CurrencyDollarIcon className="h-6 w-6 text-[#757575]" /> <p>{salary}</p>
             </div>
             <div className='mt-6 mb-10'>
-                <button className="btn capitalize bg-gradient-to-r from-[#9873FF] border-none">View Details</button>
+                <Link to={`../jobDetails/${id}`}><button className="btn capitalize bg-gradient-to-r from-[#9873FF] border-none">View Details</button></Link>
             </div>
 
             
