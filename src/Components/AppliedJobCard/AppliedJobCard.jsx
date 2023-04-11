@@ -1,14 +1,14 @@
 import React from "react";
+import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from "react-router-dom";
 
 const AppliedJobCard = ({selectedJob}) => {
-  console.log(selectedJob);
+  // console.log(selectedJob);
   const {img, title, id, brand, job_category, job_type, location, salary} = selectedJob;  
   return (
     <>
-      
-
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="flex items-center border border-gray-300 my-3 rounded-lg p-4">
+     <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="md:flex items-center border border-gray-300 my-3 rounded-lg p-4">
           <div className="px-4 py-2">
             <img className="w-[240px] mr-4" src={img} />
           </div>
@@ -28,14 +28,16 @@ const AppliedJobCard = ({selectedJob}) => {
               </button>
             </div>
             <div className="flex items-center my-4">
-              <p>{location}</p>
-              <p className="ml-6">{salary}</p>
+              <MapPinIcon className="h-4 w-4 text-[#9873FF]" />
+              <p className="ml-2 mr-6">{location}</p>
+              <CurrencyDollarIcon className="h-4 w-4 text-[#9873FF]" />
+              <p className="ml-2">{salary}</p>
             </div>
           </div>
           <div className="ml-auto">
-            <button className="bg-[#9873FF] px-4 py-2 rounded-lg text-white duration-500 hover:bg-[#60499e]">
+            <Link to={`../viewDetails/${id}`}><button className="bg-[#9873FF] px-4 py-2 rounded-lg text-white duration-500 hover:bg-[#60499e]">
               View Details
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

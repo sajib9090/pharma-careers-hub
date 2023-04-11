@@ -31,7 +31,7 @@ const Statistics = () => {
                 >
                <XAxis dataKey="assignment" scale="band" />
                <YAxis dataKey="mark"/>
-               <Bar dataKey="obtain-mark" barSize={40} fill="#413ea0" />
+               <Bar dataKey="obtain-mark" barSize={20} fill="#413ea0" />
                <Tooltip />
                <Legend />
                <Area type="monotone" dataKey="obtain-mark" fill="#8884d8" stroke="#8884d8" />
