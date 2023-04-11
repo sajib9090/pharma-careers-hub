@@ -21,7 +21,7 @@ const Statistics = () => {
       .then((data) => setMarks(data));
   }, []);
 
-  console.log(marks);
+
   return (
     <div className="max-w-7xl mx-auto mt-28 mb-12">
         <h1 className="text-center text-3xl font-bold py-8">Assignment Marks</h1>

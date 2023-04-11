@@ -8,7 +8,7 @@ const Hero = () => {
                 <h1 className='text-5xl md:text-6xl font-bold max-w-md'>One Step <br />Closer To Your <br/><span className='text-[#7E90FE]'>Dream Job</span></h1>
                 <p className='mt-5 mb-6 text-[ #757575] max-w-sm'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                 <div>
-                <button className='btn'>Get Started</button>
+                <button className='btn hover:bg-[#5a429c] bg-[#9873FF] border-none'>Get Started</button>
                 </div>
             </div>
             <div className='w-full'>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
 import SingleJobCard from "./SingleJobCard/SingleJobCard";
 
 const Featured = () => {
@@ -34,7 +33,7 @@ const Featured = () => {
       </div>
       <div className="text-center mt-10">
          { !seeAll && 
-            <button onClick={handleSeeAllBtn} className="btn capitalize bg-gradient-to-r from-[#9873FF] border-none px-8">See All Jobs</button>
+            <button onClick={handleSeeAllBtn} className="btn capitalize hover:bg-[#5d3abc] bg-[#9873FF] border-none px-8">See All Jobs</button>
          }
       </div>
     </div>

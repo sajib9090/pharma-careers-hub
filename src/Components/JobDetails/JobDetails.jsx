@@ -7,6 +7,7 @@ import {
   AtSymbolIcon,
   MapPinIcon
 } from "@heroicons/react/24/solid";
+import { addToDb } from "../../../utilities/fakedb";
 
 const JobDetails = () => {
   const jobDetails = useLoaderData([]);
@@ -17,6 +18,7 @@ const JobDetails = () => {
 
   const fetching = jobDetails.find((jd) => jd.id === jobId);
   const {
+    id,
     salary,
     job_description,
     job_responsibility,
@@ -27,6 +29,10 @@ const JobDetails = () => {
     email,
     location,
   } = fetching;
+
+  const handleApply = id => {
+    addToDb(id);
+  }
 
   return (
     <div className="">
@@ -78,7 +84,7 @@ const JobDetails = () => {
             <address className="text-[#626262] my-2"><span className="font-bold ml-2 text-black">Address:</span> {location}</address>
           </div>
         </div>
-        <button className="bg-[#9873FF] text-white py-2 rounded-lg my-4">
+        <button onClick={() => handleApply(id)} className="bg-[#9873FF] text-white py-2 rounded-lg my-4">
           Apply Now
         </button>
       </div>
