@@ -14,9 +14,9 @@ const Footer = () => {
         <div className=' h-[45vh] col-span-4 md:col-span-2 flex flex-col justify-center space-y-4'>
             <h2 className="text-lg font-semibold">Company</h2>
             <p>About Us</p>
-            <p>About Us</p>
-            <p>About Us</p>
-            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Blog</p>
+            <p>Tutorial</p>
         </div>
         <div className='h-[45vh] col-span-4 md:col-span-2 flex flex-col justify-center space-y-4'>
         <h2 className="text-lg font-semibold">Product</h2>

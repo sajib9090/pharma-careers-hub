@@ -26,6 +26,7 @@ const ViewDetails = () => {
         phone,
         email,
         location,
+        img,
       } = finding;
     
     return (
@@ -37,6 +38,9 @@ const ViewDetails = () => {
         </div>
         <div className=" max-w-7xl mx-auto px-4 md:px-8">
       <div>
+        <div className='flex justify-center'>
+        <img className='w-[300px]' src={img} alt="" />
+        </div>
          <p className="text-[#676767] pb-5 pt-4"><span className="font-bold text-black">Job Description:</span> {job_description}</p>
          <p className="text-[#676767] pb-5 pt-4"><span className="font-bold text-black">Job Responsibility:</span> {job_responsibility}</p>
          <p className="text-[#676767] pb-5 pt-4"><span className="font-bold text-black">Educational Requirements:</span> {educational_requirements}</p>

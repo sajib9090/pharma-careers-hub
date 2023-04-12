@@ -1,4 +1,3 @@
-import React from "react";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import {
   CurrencyDollarIcon,
@@ -9,6 +8,7 @@ import {
   ArrowLeftCircleIcon
 } from "@heroicons/react/24/solid";
 import { addToDb } from "../../../utilities/fakedb";
+
 
 const JobDetails = () => {
   const jobDetails = useLoaderData([]);
@@ -33,6 +33,7 @@ const JobDetails = () => {
 
   const handleApply = id => {
     addToDb(id);
+    alert('Successfully applied')
   }
   
   const navigate = useNavigate();
@@ -87,12 +88,12 @@ const JobDetails = () => {
             <address className="text-[#626262] my-2"><span className="font-bold ml-2 text-black">Address:</span> {location}</address>
           </div>
         </div>
-        <button onClick={() => handleApply(id)} className="bg-[#9873FF] text-white py-2 rounded-lg my-4">
+        <button onClick={() => handleApply(id)} className="bg-[#9873FF] btn border-none text-white py-2 rounded-lg my-4">
           Apply Now
         </button>
       </div>
     </div>
-    <div className="max-w-7xl mx-auto text-center pt-6"><button onClick={()=> navigate(-1)}><ArrowLeftCircleIcon className="h-10 w-10 text-[#9873FF] hover:text-[#6950ae] duration-300"/></button></div>
+    <div className="max-w-7xl mx-auto text-center pt-6"><button onClick={()=> navigate(-1)}><ArrowLeftCircleIcon className="h-10 w-10 hover:bg-[#513e88] text-[#9873FF] hover:text-[#6950ae] duration-300"/></button></div>
     </>
   );
 };
