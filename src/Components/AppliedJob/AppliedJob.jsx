@@ -22,6 +22,9 @@ const AppliedJob = () => {
     }
   }
 
+  // const filtered = (event)=>{
+  //   console.log(event.target.value);
+  // }
   return (
     <>
       <div className="bg-[#9873ff27]">
@@ -30,7 +33,7 @@ const AppliedJob = () => {
         </div>
       </div>
       <div className="text-right max-w-7xl mx-auto px-4 md:px-8 mb-4">
-          <select className="border border-gray-300 rounded-lg py-2 px-4 focus:border-[#9873FF]">
+          <select name="isAvailable" className="border border-gray-300 rounded-lg py-2 px-4 focus:border-[#9873FF]">
             <option disabled selected>
               Filter By
             </option>
@@ -38,8 +41,8 @@ const AppliedJob = () => {
             <option>Onside</option>
           </select>
         </div>
-      {appliedId.map((selectedJob, index) => (
-        <AppliedJobCard key={index} selectedJob={selectedJob} />
+      {appliedId.map((selectedJob) => (
+        <AppliedJobCard key={selectedJob.id} selectedJob={selectedJob} />
       ))}
     </>
   );

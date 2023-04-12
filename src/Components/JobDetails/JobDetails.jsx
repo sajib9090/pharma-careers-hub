@@ -8,6 +8,8 @@ import {
   ArrowLeftCircleIcon
 } from "@heroicons/react/24/solid";
 import { addToDb } from "../../../utilities/fakedb";
+import { Toaster, toast } from "react-hot-toast";
+
 
 
 const JobDetails = () => {
@@ -33,7 +35,7 @@ const JobDetails = () => {
 
   const handleApply = id => {
     addToDb(id);
-    alert('Successfully applied')
+    toast.success('Successfully Applied', { autoClose: 500 })
   }
   
   const navigate = useNavigate();
@@ -94,6 +96,7 @@ const JobDetails = () => {
       </div>
     </div>
     <div className="max-w-7xl mx-auto text-center pt-6"><button onClick={()=> navigate(-1)}><ArrowLeftCircleIcon className="h-10 w-10 hover:bg-[#513e88] text-[#9873FF] hover:text-[#6950ae] duration-300"/></button></div>
+    <Toaster/>
     </>
   );
 };
